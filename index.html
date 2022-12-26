@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"      crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title></title>
+</head>
+<body>
+    <main class="main container text-center">
+      
+      
+      <section class="principal">
+      <div class="logo">
+          <img class="logo__image" src="./utilidades/Logo-2.png" alt="imagen del logo">
+      </div>
+        <textarea class="principal__message "   pattern="[a-z]*"  placeholder="Ingrese el texto aqui"id="cifrado" ></textarea>
+        <!-- <textarea class="principal__message " placeholder="Ingrese el texto aqui" id="cifrado" ></textarea> -->
+        
+        <div class="secundary">
+            <p class="secundary__text"><img src="./utilidades/Vector.png" class="secundary__img" alt="imagen de alerta"> Solo letras minúsculas y sin acentos</p>
+            
+            <div class="buttons">
+                <button type="button" id="btn-encryp" class="button__encryption">Encriptar</button>
+                <button type="button" id="btn-decryp" class="button__decrypt">Desencriptar</button>
+            </div> <!-- button -->
+            
+        </div> <!-- secundary -->
+      </section> <!-- principal -->
+      
+      <aside class="aside">
+        <div class="copy">
+            <textarea class="copy__message hidden" pattern="[a-z]*"  id="copyElement" ></textarea>
+        </div> <!-- copy -->
+        
+        <div class="load" id="principal-text-div">
+            <img class="load__image hidden" id="boy-image" src="./utilidades/Muñeco.png" alt="imagen de inexistencia de texto">
+            
+            <div class="text" >
+                <h2 class="text__title">Ningún mensaje fue encontrado</h2>
+                <p class="text__description">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div> <!-- text -->
+            
+        </div> <!-- load -->
+        <button class="text__boton hidden" id="button-papelera" type="button">Copiar</button>
+      </aside> <!-- aside -->
+    </main>
+    
+    <footer class="footer">
+    <div class="icons container">
+        <div class="git">
+            <img class="git__image" src="./utilidades/github-removebg-preview.png" alt="logo de github">
+            <a class="git__link"  href="https://github.com/johnCoor">Github</a>
+        </div>
+        <div class="linkend">
+            <img  class="linkend__img" src="./utilidades/linkedin-removebg-preview.png" alt="logo de Linkedin">
+            <a class="linkend__link" href="https://www.linkedin.com/in/john-jes%C3%BAs-orellana-salazar-dev">Linkedin</a>
+        </div>
+    </div>
+        <p class="footer__text text-center">© Hecho por John Orellana | 2022 </p>
+    </footer>
+    
+    <script src="main.js"></script>
+</body>
+</html>
